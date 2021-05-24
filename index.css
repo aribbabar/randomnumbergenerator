@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Remove arrows from inut */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+    font-family: 'Varela', sans-serif;
+}
+
+.main {
+    height: 100vh;
+    background-color: #fdfaf6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first {
+    height: 80vh;
+    width: 150vh;
+    background-color: #faf1e6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    padding: 2rem;
+}
+
+.first-table {
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0.5rem;
+}
+
+@media screen and (max-width:768px) {
+    .first-table {
+        text-align: center;
+    }
+}
+
+.generate-td {
+    text-align: right;
+}
+
+.clear-td {
+    text-align: left;
+}
+
+#invalid {
+    display: none;
+    color: red;
+    text-align: center;
+}
+
+.btn {
+    background-color: #393e46;
+    border: none;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+input {
+    background-color: #fafafa;
+    border: 1px solid;
+}
+
+input:focus {
+    border: 1px solid #555;
+}
