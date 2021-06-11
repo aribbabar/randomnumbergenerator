@@ -10,9 +10,14 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-body {
-    font-family: 'Varela', sans-serif;
+body { font-family: 'Varela', sans-serif; }
+
+a {
+    text-decoration: none;
+    color: #fff;
 }
+
+table { border-spacing: 0.5rem; }
 
 .main {
     height: 100vh;
@@ -22,65 +27,61 @@ body {
     justify-content: center;
 }
 
-.first {
-    height: 80vh;
-    width: 150vh;
-    background-color: #faf1e6;
-    text-align: center;
+/* Home Page */
+
+.btn-container {
+    margin: 1rem;
+    padding: 1rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.heading {
-    padding: 2rem;
-}
-
-.first-table {
-    text-align: right;
-    margin-left: auto;
-    margin-right: auto;
-    border-spacing: 0.5rem;
-}
-
-@media screen and (max-width:768px) {
-    .first-table {
-        text-align: center;
-    }
-}
-
-.generate-td {
-    text-align: right;
-}
-
-.clear-td {
-    text-align: left;
-}
-
-#invalid {
-    display: none;
-    color: red;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     text-align: center;
 }
 
 .btn {
-    background-color: #393e46;
-    border: none;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(50, 50, 50);
     color: #fff;
-    padding: 1rem 2rem;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
+    border: none;
+    font-size: 2rem;
+}
+
+/* Other pages */
+.heading { text-align: center; }
+
+.container {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .container { padding: 0.5rem; }
+}
+
+.generate-td { text-align: right; }
+
+.clear-td { text-align: left; }
+
+#generate,
+#clear {
     cursor: pointer;
+    font-size: 16px;
 }
 
-input {
-    background-color: #fafafa;
-    border: 1px solid;
+#generate:hover,
+#clear:hover {
+    background-color: rgb(100, 100, 100);
 }
 
-input:focus {
-    border: 1px solid #555;
+#invalid {
+    color: red;
+    display: none;
 }

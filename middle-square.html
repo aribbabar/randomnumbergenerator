@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middle-square method</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');</style>
+    <link rel="stylesheet" href="index.css">
+    <script src="middle-square.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <td><h1 class="heading">Middle-square method</h1></td>
+            <table class="table">
+                <tr>
+                    <td><label for="">Seed (Optional): </label></td>
+                    <td><input id="seed" type="number"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Lower Bound (inclusive): </label></td>
+                    <td><input id="lower-bound" type="number"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td><label for="">Upper Bound (inclusive): </label></td>
+                    <td><input id="upper-bound" type="number"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td><label for="">Result: </label></td>
+                    <td><input id="result" type="text" readonly></td>
+                </tr>
+                <tr class="buttons-container">
+                    <td class="generate-td"><button id="generate" class="btn">Generate</button></td>
+                    <td class="clear-td"><button id="clear" class="btn">Clear</button></td>
+                </tr>
+            </table>
+            <p id="invalid">Invalid Input!</p>    
+        </div>
+    </div>
+</body>
+</html>
